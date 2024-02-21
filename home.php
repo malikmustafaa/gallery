@@ -50,8 +50,7 @@ if ($_SESSION['login'] != 'Username') {
 
   <div class="container mt-3">
     Album :
-    <?php
-    $fotoid = $data['fotoid'];  
+    <?php  
     $album = mysqli_query($conn, "SELECT * FROM album WHERE UserID='$userid'");
     while ($row = mysqli_fetch_array($album)) { ?>
       <a href="home.php?albumid=<?php echo $row['AlbumID']; ?>" class="btn btn-outline-success">

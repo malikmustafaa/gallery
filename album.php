@@ -22,7 +22,7 @@ if ($_SESSION['login'] != 'Username') {
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
     <div class="container">
       <a class="navbar-brand" href="index.php">Website Gallery Foto</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,7 +38,7 @@ if ($_SESSION['login'] != 'Username') {
         <?php
         if (isset($_SESSION['login'])) {
           ?>
-          <a href="config/aksi_logout.php" class="btn btn-outline-danger m-1">Keluar</a>
+          <a href="config/aksi_logout.php" class="btn btn-outline-light m-1">Keluar</a>
         <?php } else { ?>
           <a href="register.php" class="btn btn-outline-success m-1">Daftar</a>
           <a href="login.php" class="btn btn-outline-success m-1">Login</a>
